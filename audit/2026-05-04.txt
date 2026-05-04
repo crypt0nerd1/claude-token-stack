@@ -1,0 +1,166 @@
+=== claude-token-stack audit ===
+2026-05-04T11:29:27Z
+host: Darwin 25.1.0 arm64
+
+--- versions ---
+rtk 0.37.2
+codex-cli 0.120.0
+v25.2.1
+Python 3.14.3
+uv 0.10.6 (a91bcf268 2026-02-24)
+1.8.0
+
+--- claude mcp list ---
+Checking MCP server health…
+
+claude.ai Beehiv: https://mcp.beehiiv.com/mcp - ✓ Connected
+claude.ai Google Drive: https://drivemcp.googleapis.com/mcp/v1 - ! Needs authentication
+claude.ai Apollo.io: https://mcp.apollo.io/mcp - ✓ Connected
+claude.ai Introw: https://app.introw.io/api/mcp - ✓ Connected
+claude.ai AWS Marketplace: https://marketplace-mcp.us-east-1.api.aws/mcp - ✓ Connected
+claude.ai Mercury: https://mcp.mercury.com/mcp - ! Needs authentication
+claude.ai Gamma: https://mcp.gamma.app/mcp - ✓ Connected
+claude.ai Granola: https://mcp.granola.ai/mcp - ✓ Connected
+claude.ai Clay: https://api.clay.com/v3/mcp - ✓ Connected
+claude.ai Crossbeam: https://mcp.crossbeam.com - ! Needs authentication
+claude.ai Excalidraw: https://mcp.excalidraw.com/mcp - ✓ Connected
+claude.ai Pylon: https://mcp.usepylon.com - ✓ Connected
+claude.ai Slack: https://mcp.slack.com/mcp - ✓ Connected
+claude.ai Gmail: https://gmailmcp.googleapis.com/mcp/v1 - ✓ Connected
+claude.ai Google Calendar: https://calendarmcp.googleapis.com/mcp/v1 - ✓ Connected
+claude.ai Notion: https://mcp.notion.com/mcp - ! Needs authentication
+claude.ai monday.com: https://mcp.monday.com/mcp - ! Needs authentication
+claude.ai Linear: https://mcp.linear.app/mcp - ! Needs authentication
+claude.ai Intercom: https://mcp.intercom.com/mcp - ! Needs authentication
+claude.ai HubSpot: https://mcp.hubspot.com/anthropic - ! Needs authentication
+claude.ai Figma: https://mcp.figma.com/mcp - ✗ Failed to connect
+claude.ai Canva: https://mcp.canva.com/mcp - ! Needs authentication
+claude.ai Box: https://mcp.box.com - ! Needs authentication
+claude.ai Atlassian: https://mcp.atlassian.com/v1/mcp - ! Needs authentication
+claude.ai Asana: https://mcp.asana.com/sse - ! Needs authentication
+plugin:playwright:playwright: npx @playwright/mcp@latest - ✓ Connected
+plugin:slack:slack: https://mcp.slack.com/mcp (HTTP) - ! Needs authentication
+linear: https://mcp.linear.app/sse (SSE) - ! Needs authentication
+context-mode: /Users/lucasgalvao/.npm-global/bin/context-mode  - ✓ Connected
+token-optimizer-mcp: /Users/lucasgalvao/.npm-global/bin/token-optimizer-mcp  - ✓ Connected
+token-savior: /Users/lucasgalvao/.local/bin/token-savior  - ✓ Connected
+tessl: tessl mcp start - ✓ Connected
+code-review-graph: uvx code-review-graph serve - ✓ Connected
+
+--- skills present ---
+analyze-business-logic-gaps
+champion-coach
+deal-diagnosis
+derive-acceptance-criteria-from-business-logic
+design-thinking
+exec-call-prep
+exec-outreach-builder
+generate-tests-from-business-logic
+refine-business-logic-for-implementation
+reverse-engineering-business-logic
+stakeholder-map
+tailor-bdd-skills-for-project
+token-optimizer
+typst
+validate-business-logic-against-code
+vanta-cold-email
+vanta-compete
+vanta-deal-prep
+vanta-deal-review
+vanta-demo-deck
+
+--- token-optimizer install root ---
+LICENSE
+PRIVACY.md
+README.md
+SECURITY.md
+bash-rewrites.jsonl
+checkpoints
+commands
+config.json
+docs
+hooks
+install.sh
+openclaw
+quality-cache-5d4136c3-db0b-43d2-9f18-81aec86faf79.json
+quality-cache-5f160d8e-09fe-4d49-87aa-44152179ee61.json
+quality-cache-ea731e5b-0bca-48a6-a969-41c3bc71c3cd.json
+signatures
+skills
+
+--- rtk gain ---
+RTK Token Savings (Global Scope)
+════════════════════════════════════════════════════════════
+
+Total commands:    10199
+Input tokens:      14.4M
+Output tokens:     4.0M
+Tokens saved:      10.5M (72.6%)
+Total exec time:   733m7s (avg 4.3s)
+Efficiency meter: █████████████████░░░░░░░ 72.6%
+
+By Command
+────────────────────────────────────────────────────────────────────────
+  #  Command                   Count   Saved    Avg%    Time  Impact    
+────────────────────────────────────────────────────────────────────────
+ 1.  rtk lint eslint               9    4.8M   99.2%    2.4s  ██████████
+ 2.  rtk find                    135  873.4K   65.0%    22ms  ██░░░░░░░░
+ 3.  rtk grep                    168  815.3K   24.6%    20ms  ██░░░░░░░░
+ 4.  rtk:toml ps aux              11  578.7K   98.3%    58ms  █░░░░░░░░░
+ 5.  rtk curl -fsSL https:...      1  506.5K  100.0%    1.5s  █░░░░░░░░░
+ 6.  rtk read                    324  426.5K   21.6%     0ms  █░░░░░░░░░
+ 7.  rtk curl -s https://r...      1  304.6K  100.0%   278ms  █░░░░░░░░░
+ 8.  rtk:toml ps -axo pid,...      5  253.0K   99.1%    83ms  █░░░░░░░░░
+ 9.  rtk:toml ps -ef               4  182.3K   98.6%    31ms  ░░░░░░░░░░
+10.  rtk:toml ps -axo pid,...      3  161.2K   99.3%    57ms  ░░░░░░░░░░
+────────────────────────────────────────────────────────────────────────
+
+
+--- token-optimizer measure report ---
+
+=======================================================
+  TOKEN OVERHEAD REPORT
+=======================================================
+
+=======================================================
+  Snapshot: current (2026-05-04T08:29)
+=======================================================
+  claude_md_global                       733 tokens  [48 lines]
+  claude_md_home                         733 tokens  [35 lines]
+  claude_md_project_98ad15ef-e542-9b88-5056-a5f276c45352  1,312 tokens  [107 lines]
+  MEMORY.md                              741 tokens  [57 lines]
+  Skills (frontmatter)                 1,552 tokens  [20 skills]
+    + Plugin skills                      880 tokens  [10 from claude-code-setup, playwright, slack, caveman, 1 disabled]
+  Commands (frontmatter)                 300 tokens  [6 commands]
+    + Plugin commands                    250 tokens  [5 from plugins]
+  MCP tools (deferred)                     0 tokens  [0 servers, ~0 tools]
+  Rules (.claude/rules/)                 510 tokens  [4 files, 0 always-loaded]
+  @imports in CLAUDE.md                1,378 tokens  [2 imports]
+  Core system (fixed)                 12,900 tokens
+  =====================================================
+  ESTIMATED TOTAL                     21,289 tokens
+  Context used before typing            2.1% of 1M window
+
+  Real session baseline (avg of 9): 34,144 tokens
+  (includes system reminders, conversation history, etc.)
+
+  File exclusion rules: NONE
+  Hooks: CwdChanged, PostCompact, PostToolUse, PreCompact, PreToolUse, SessionEnd, SessionStart, Stop, StopFailure, UserPromptSubmit
+  settings.local.json: Found
+  Verbose skill descriptions (>120 chars): 14 (analyze-business-logic-gaps, champion-coach, derive-acceptance-criteria-from-business-logic, design-thinking, exec-outreach-builder...)
+
+  Calibration gap: estimated 21,289 vs real 34,143 (+60%)
+  (Based on 9 recent sessions. Gap likely from unmeasured system overhead.)
+
+  --- Recent Session Baselines (from JSONL logs) ---
+    2026-05-01T00:36   31,414 tokens
+    2026-04-24T12:24   36,128 tokens
+    2026-04-23T11:05   22,533 tokens
+    2026-04-23T11:05   36,378 tokens
+    2026-04-23T11:05   53,035 tokens
+    2026-04-21T02:11   36,895 tokens
+    2026-04-20T20:55   36,261 tokens
+    2026-04-20T20:35   30,663 tokens
+    2026-04-20T20:31   23,987 tokens
+
+=======================================================
